@@ -1,0 +1,469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+--- !u!1001 &2284596735158029128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+=======
+--- !u!1 &1139047380858781392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2901358689987657786}
+  - component: {fileID: 4048084222232599884}
+  - component: {fileID: 3633602927294370875}
+  m_Layer: 5
+  m_Name: barHealth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2901358689987657786
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139047380858781392}
+  m_LocalRotation: {x: -0, y: 0.999868, z: -0, w: -0.016250104}
+  m_LocalPosition: {x: 0, y: 0, z: 1.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1822926411053981770}
+  m_LocalEulerAnglesHint: {x: 0, y: 181.862, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -19.1, y: 21.5}
+  m_SizeDelta: {x: 112.634, y: 75.003}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4048084222232599884
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139047380858781392}
+  m_CullTransparentMesh: 1
+--- !u!114 &3633602927294370875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139047380858781392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b90617af3f3dceb479ae922bb9969e78, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1612378475888556921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1822926411053981770}
+  - component: {fileID: 789606668113757248}
+  - component: {fileID: 4515881250767801149}
+  - component: {fileID: 7237866576689256647}
+  - component: {fileID: 6369434030282255314}
+  m_Layer: 5
+  m_Name: BarHealthEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1822926411053981770
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612378475888556921}
+  m_LocalRotation: {x: -0.0000038727517, y: 0.99996996, z: -0.0000023271089, w: -0.007758318}
+  m_LocalPosition: {x: 0, y: 0, z: -0.98}
+  m_LocalScale: {x: 0.09999999, y: 0.099999994, z: 0.09999999}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2901358689987657786}
+  m_Father: {fileID: 7785838135696112935}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.889, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.37, y: 2.54}
+  m_SizeDelta: {x: 73.9995, y: 15.4472}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &789606668113757248
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612378475888556921}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &4515881250767801149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612378475888556921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!114 &7237866576689256647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612378475888556921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &6369434030282255314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612378475888556921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ada56a214331e44a18c6b06b9c467a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &7747990117056666316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.072258
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0445773
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.85
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      propertyPath: m_Name
+      value: horse
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6594402861160594656}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5292111304914801977}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -320244721131065475}
+  m_SourcePrefab: {fileID: 100100000, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+--- !u!1 &1402287931570370073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 30fde7ef8e7d4f14ab81f73ca954238d, type: 3}
+  m_PrefabInstance: {fileID: 2284596735158029128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6594402861160594656
+=======
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.924183
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.055731
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_Name
+      value: telega
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1822926411053981770}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7959472899058952600}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7594940152190202729}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4240208886285675725}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5897448399555695754}
+  m_SourcePrefab: {fileID: 100100000, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+--- !u!1 &7441928059498489757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+  m_PrefabInstance: {fileID: 7747990117056666316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &7959472899058952600
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7441928059498489757}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &7594940152190202729
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+  m_GameObject: {fileID: 1402287931570370073}
+=======
+  m_GameObject: {fileID: 7441928059498489757}
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+  m_Size: {x: 0.008160709, y: 0.019057306, z: 0.024941172}
+  m_Center: {x: -0.0012238292, y: 0.009082881, z: 0.0029442827}
+--- !u!114 &5292111304914801977
+=======
+  m_Size: {x: 1.6552067, y: 1.6341596, z: 4.8819046}
+  m_Center: {x: -0.039027214, y: 0.76072884, z: -0.8753395}
+--- !u!114 &4240208886285675725
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+  m_GameObject: {fileID: 1402287931570370073}
+=======
+  m_GameObject: {fileID: 7441928059498489757}
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26784f3259d4bb34aa84b02a3234afde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+  speed: 0
+  _speed: 0
+  waypoints: []
+--- !u!114 &-320244721131065475
+=======
+  speed: 4
+  Enemy: {fileID: 7785838135696112935}
+  rotSpeed: 5
+  _speed: 0
+  waypoints:
+  - {fileID: 1557817044701528519, guid: 7f8e56e60c1a7f04f863c4476694a4c2, type: 3}
+  - {fileID: 4400149821220501634, guid: 584ef384d298a3240986992feb2559a6, type: 3}
+  - {fileID: 7600401620975297145, guid: 49d30a5048db4e84e8857898487d2ca9, type: 3}
+  - {fileID: 1692413913397375924, guid: 1062b66ff7ec7dd478f3d243ec41385a, type: 3}
+  - {fileID: 4835238700511917075, guid: a611d481a90a4e9439596e54e01a5802, type: 3}
+  - {fileID: 1567109072098819672, guid: f1f07993395319246a6ccb8b8faf04a0, type: 3}
+  - {fileID: 8307630152971196249, guid: 3cbf0bb4480797b46aedcb84f277f4a5, type: 3}
+  - {fileID: 6284322608685492365, guid: 4e7a57b24ef2e5d48b4f2d91391f350e, type: 3}
+--- !u!114 &5897448399555695754
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+  m_GameObject: {fileID: 1402287931570370073}
+=======
+  m_GameObject: {fileID: 7441928059498489757}
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4b931906fba0a45aa4665fc8a0ca5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Prefabs/Mobs/horse.prefab
+  _enemyHealth: 0
+  _healthBar: {fileID: 0}
+=======
+  _enemyHealth: 5
+  _healthBar: {fileID: 3633602927294370875}
+  deadMoney: 10
+--- !u!4 &7785838135696112935 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a297a65f37619b34985fb518fd4e9bef, type: 3}
+  m_PrefabInstance: {fileID: 7747990117056666316}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes:Assets/Prefabs/Mobs/telega.prefab
