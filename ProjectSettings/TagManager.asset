@@ -11,6 +11,7 @@ TagManager:
   - EmemyBase
   - Multi
   - Bullet
+  - Level
   layers:
   - Default
   - TransparentFX

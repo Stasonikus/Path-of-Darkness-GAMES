@@ -1,5 +1,5 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnEnemyBase : MonoBehaviour
@@ -8,6 +8,8 @@ public class SpawnEnemyBase : MonoBehaviour
     [SerializeField] private SpawnController[] _spawnController;
 
     public SpawnController[] SpawnController { get => _spawnController; }
+
+    public event Action<int> WaveCompleted; // Событие, вызываемое при завершении волны
 
     private int _currentWaveIndex; // Индекс текущей волны
     private int _enemiesLeftToSpawn; // Количество оставшихся для спавна врагов в текущей волне
@@ -31,6 +33,9 @@ public class SpawnEnemyBase : MonoBehaviour
             _enemiesLeftToSpawn--;
         }
 
+        // Вызываем событие о завершении волны
+        OnWaveCompleted(_currentWaveIndex);
+
         // Проверяем, есть ли еще волны для спавна
         if (_currentWaveIndex < _waves.Length - 1)
         {
@@ -39,6 +44,14 @@ public class SpawnEnemyBase : MonoBehaviour
             StartCoroutine(SpawnEnemiesInWave());
         }
     }
+
+    private void OnWaveCompleted(int waveIndex)
+    {
+        WaveCompleted?.Invoke(waveIndex);
+    }
+
+    
+   
 }
 
 [System.Serializable]

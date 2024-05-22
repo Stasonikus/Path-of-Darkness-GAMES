@@ -5,46 +5,55 @@ namespace StarterAssets
 {
     public class EnemyHealth : MonoBehaviour
     {
-        [SerializeField] private int _enemyHealth;
+        [SerializeField] private float enemyHealth;
         [SerializeField] private Image _healthBar;
-
+        [SerializeField] private int deadMoney;
         private Image bar;
-        private int _maxEnemyHealth;
+        public static float _maxEnemyHealth;
 
         private void Start()
         {
-            _maxEnemyHealth = _enemyHealth;
+            _maxEnemyHealth = enemyHealth;
             bar = _healthBar; // Присваиваем _healthBar переменной bar
         }
 
         private void Update()
         {
-            if (_enemyHealth <= 0)
+            if (enemyHealth <= 0)
             {
-                Destroy(gameObject);
+                // Проверка на наличие объекта Money и добавление денег
+                if (Money.Instance != null)
+                {
+                    Money.Instance._money += deadMoney;
+                }
+
+                Destroy(gameObject); // Перенос уничтожения объекта в случае, если здоровье меньше или равно нулю
             }
         }
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag("Arrow"))
             {
-                _enemyHealth -= Damage._arrow;
-                float healthPercentage = (float)_enemyHealth / _maxEnemyHealth;
-                bar.fillAmount = healthPercentage;
+                enemyHealth -= Damage._arrow;
+                UpdateHealthBar();
             }
-            if (other.gameObject.CompareTag("Bullet"))
+            else if (other.gameObject.CompareTag("Bullet"))
             {
-                _enemyHealth -= Damage._bullet;
-                float healthPercentage = (float)_enemyHealth / _maxEnemyHealth;
-                bar.fillAmount = healthPercentage;
+                enemyHealth -= Damage._bullet;
+                UpdateHealthBar();
             }
-            if (other.gameObject.CompareTag("Multi"))
+            else if (other.gameObject.CompareTag("Multi"))
             {
-                _enemyHealth -= Damage._multi;
-                float healthPercentage = (float)_enemyHealth / _maxEnemyHealth;
-                bar.fillAmount = healthPercentage;
+                enemyHealth -= Damage._multi;
+                UpdateHealthBar();
             }
         }
 
+        private void UpdateHealthBar()
+        {
+            float healthPercentage = enemyHealth / _maxEnemyHealth;
+            bar.fillAmount = healthPercentage;
+        }
     }
 }

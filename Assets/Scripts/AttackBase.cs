@@ -26,7 +26,7 @@ public class AttackBase : MonoBehaviour
     {
         if (hhealthBase <= 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         HelthBase.text = hhealthBase.ToString();
     }

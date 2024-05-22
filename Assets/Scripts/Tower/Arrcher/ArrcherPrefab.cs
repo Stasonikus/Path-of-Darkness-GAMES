@@ -74,7 +74,7 @@ namespace StarterAssets
             }
             else
             {
-                Debug.LogError("No Enemies found in radius!");
+                
             }
 
             // Если есть активная корутина движения, останавливаем её

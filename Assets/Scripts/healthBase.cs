@@ -28,7 +28,7 @@ public class healthBase : MonoBehaviour
     {
         if (_healthBase <= 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         HelthBase.text = _healthBase.ToString();
     }

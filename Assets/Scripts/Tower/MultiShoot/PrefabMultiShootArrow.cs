@@ -31,6 +31,12 @@ namespace StarterAssets
             {
                 moveCoroutine = StartCoroutine(MoveToTarget());
             }
+            StartCoroutine(DestroyAfterDelay(2.0f));
+        }
+        IEnumerator DestroyAfterDelay(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            Destroy(gameObject);
         }
 
         IEnumerator MoveToTarget()
@@ -40,13 +46,16 @@ namespace StarterAssets
                 Vector3 direction = targetEnemy.transform.position - transform.position;
                 transform.Translate(direction.normalized * speed * Time.deltaTime);
                 yield return null;
+                
             }
             moveCoroutine = null;
+            
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag("Enemy"))
+            Debug.Log(other.name);
+            if (other.CompareTag("Enemy"))
             {
                 Destroy(gameObject);
             }
@@ -65,6 +74,7 @@ namespace StarterAssets
                 {
                     enemiesInRadius.Add(enemy);
                 }
+
             }
 
             if (enemiesInRadius.Count > 0)
@@ -74,8 +84,9 @@ namespace StarterAssets
             }
             else
             {
-                Debug.LogError("No Enemies found in radius!");
+                
             }
+          
 
             // Если есть активная корутина движения, останавливаем её
             if (moveCoroutine != null)

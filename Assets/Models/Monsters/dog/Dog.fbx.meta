@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: wolf_rig|idle (1)
-      takeName: wolf_rig|idle
+      name: wolf_rig|sniffing
+      takeName: wolf_rig|sniffing
       internalID: -4146245659158764104
       firstFrame: 0
-      lastFrame: 120
+      lastFrame: 41
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

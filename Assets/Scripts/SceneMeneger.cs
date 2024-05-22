@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class SceneMeneger : MonoBehaviour
 {
+    
     public void Retart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void Exit()
@@ -22,6 +24,11 @@ public class SceneMeneger : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(0);
     }
+    public void Level()
+    {
+        SceneManager.LoadScene(3);
+    }
+   
 }

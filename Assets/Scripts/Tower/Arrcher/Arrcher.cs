@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace StarterAssets
 {
-    public class Arrcher : MonoBehaviour
+    public class GridArrcher : MonoBehaviour
     {
-        [SerializeField] public float detectionRadius; // Радиус поиска.
-        [SerializeField] public float fireRate = 1.0f; // Время выстрела.
+        [SerializeField] private float detectionRadius = 5; // Радиус поиска.
+        [SerializeField] private float fireRate = 1.0f; // Время выстрела.
         [SerializeField] private float lastShootTime;
+        [SerializeField] private GameObject Prefab;
 
+        private bool hasPerformedCheck = false;
 
         public Transform Shootpositoin; // Позицыя выстрела.
         public GameObject PrefabArrow; // Префаб стрелы.
@@ -26,13 +28,24 @@ namespace StarterAssets
             Collider[] hitcolliders = Physics.OverlapSphere(transform.position, detectionRadius); // Делаем радиус поиска.
             foreach (Collider collider in hitcolliders)
             {
-                if (collider.CompareTag("Enemy"))
+                if (!hasPerformedCheck)
                 {
-                    playerDetected = true;
-                    Debug.Log("Выстрел");
-                    Shoot();
-                    break;
+                    if (Buildgrid.shoot == true)
+                    {
+                        hasPerformedCheck = true;
+                    }
                 }
+                if (hasPerformedCheck == true)
+                {
+                    if (collider.CompareTag("Enemy"))
+                    {
+                        playerDetected = true;
+                        
+                        Shoot();
+                        break;
+                    }
+                }
+                
             }
             if (!playerDetected)
             {

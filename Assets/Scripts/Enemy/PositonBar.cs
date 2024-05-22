@@ -15,7 +15,7 @@ public class PositonBar : MonoBehaviour
     // Update is called once per frame
      private void LateUpdate()
     {
-        transform.LookAt(new Vector3(transform.position.x, _camera.transform.position.y, _camera.transform.position.z));
+        transform.LookAt(_camera.transform.position);
         transform.Rotate(0, 180, 0);
     }
 }

@@ -10,6 +10,8 @@ namespace StarterAssets
         [SerializeField] private float fireRate = 1.0f; // Время выстрела.
         [SerializeField] private float lastShootTime;
 
+        public static float _fireAttak;
+        private bool hasPerformedCheck = false;
         public Transform[] Shootpositoin; // Позиция выстрела.
         public GameObject PrefabArrow; // Префаб стрелы.
         private GameObject target; // Цель для атаки.
@@ -17,7 +19,8 @@ namespace StarterAssets
 
         void Start()
         {
-            lastShootTime = -fireRate;
+            lastShootTime = -_fireAttak;
+            _fireAttak = fireRate;
         }
 
         // Update is called once per frame
@@ -28,14 +31,26 @@ namespace StarterAssets
 
             foreach (Collider collider in hitcolliders)
             {
-                if (collider.CompareTag("Enemy") )
+                if (!hasPerformedCheck)
                 {
-                    detected = true;
-                    Debug.Log("Выстрел");
-                    target =  collider.gameObject; // Устанавливаем новую цель
-                    Shoot();
-                    break;
+                    if (Buildgrid.shoot == true)
+                    {
+                        hasPerformedCheck = true;
+                    }
                 }
+                if (hasPerformedCheck == true)
+                {
+                    if (collider.CompareTag("Enemy"))
+                    {
+                        detected = true;
+                        
+                        target = collider.gameObject; // Устанавливаем новую цель
+                        Shoot();
+                        break;
+                    }
+                }
+
+                    
             }
 
             if (!detected)
@@ -55,7 +70,7 @@ namespace StarterAssets
         {
            
             
-             if (Time.time - lastShootTime > fireRate)
+             if (Time.time - lastShootTime > _fireAttak)
              {
                 lastShootTime = Time.time; // Скидываем время
                 foreach(Transform shootPosition in Shootpositoin )

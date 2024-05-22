@@ -1,25 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class build : MonoBehaviour
 {
     public Renderer MainRenderer;
     public Vector2Int Size = Vector2Int.one;
+    public int cost;
+    public static int _cost;
 
+
+    private void Start()
+    {
+        _cost = cost; 
+    }
     public void SetTransperent(bool available)
     {
-        if (available) 
-        {
-            MainRenderer.material.color = Color.green;
-        }
-        else
-        {
-            MainRenderer.material.color = Color.red;
-        }
+        
+        
+            if (available)
+            {
+                
+                MainRenderer.material.color = Color.green;
+               
+
+            }
+            else
+            {
+              MainRenderer.material.color = Color.red;
+            }
+
+
+
+       
+
     }
 
     public void SetNormal()
